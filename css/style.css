@@ -214,7 +214,7 @@ a{
 }
 
 .test-top h4, h2, p{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .test-top h2{
@@ -226,7 +226,76 @@ a{
     font-size: 15px;
 }
 
-/*Responsive*/
+/*TESTIMONIALS TEXT AND PICTURES*/
+
+.test-row{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.col-test{
+    padding-bottom: 40px;
+}
+
+.card-test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #9792e4;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card-t-img1{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/testimonial1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding: 70px;
+}
+
+.card-t-img2{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/testimonial2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding: 70px;
+}
+
+.card-t-img3{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/testimonial3.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding: 70px;
+}
+
+.card-t-text{
+    color: white;
+    padding: 0 40px;
+}
+
+.card-t-text i{
+    padding: 0 5px;
+}
+
+.card-t-text h5{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+/******************************
+RESPONSIVE
+*******************************/
 
 @media screen and (min-width: 365px) {
     .container{
@@ -244,6 +313,12 @@ a{
 
     /*jumbotron*/
     .row-j{
+        display: flex;
+        flex-direction: column;
+    }
+    /*testimonials*/
+
+    .card-test{
         display: flex;
         flex-direction: column;
     }
@@ -268,6 +343,13 @@ a{
             display: flex;
             flex-direction: column;
     }
+
+    /*testimonials*/
+
+    .card-test{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -286,6 +368,13 @@ a{
 
     /*jumbotron*/
     .row-j{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*testimonials*/
+
+    .card-test{
         display: flex;
         flex-direction: column;
     }
@@ -308,6 +397,13 @@ a{
     .row-j{
         display: flex;
         flex-direction: column;
+    }
+
+    /*testimonials*/
+
+    .card-test{
+        display: flex;
+        flex-direction: row;
     }
 }
 
