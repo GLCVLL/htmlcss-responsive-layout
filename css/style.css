@@ -10,3 +10,146 @@
 body{
     font-family: "PT Sans", sans-serif;
 }
+
+.container{
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Header*/
+
+.navbar{
+    height: 80px;
+    background-color: #0084fd;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-elements .hamburger-menù{
+    display: none;
+}
+
+.navbar-list{
+    display: flex;
+}
+
+.navbar-list li{
+    padding: 0 10px;
+}
+
+.navbar-list li:last-child a{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 365px) {
+    .container{
+        max-width: 340px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: block;
+        color: white;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container{
+        max-width: 450px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: block;
+        color: white;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: block;
+        color: white;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 740px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: block;
+        color: white;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 840px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: none;
+    }
+
+    .navbar-list{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1080px;
+    }
+
+    .navbar-elements .hamburger-menù{
+        display: none;
+    }
+
+    .navbar-list{
+        display: flex;
+    }
+}
