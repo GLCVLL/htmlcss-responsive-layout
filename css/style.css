@@ -8,6 +8,7 @@
 /*generics*/
 
 body{
+    padding-top: 100px;
     font-family: "PT Sans", sans-serif;
 }
 
@@ -26,6 +27,8 @@ a{
 }
 
 /*Header*/
+
+/*NAVBAR*/
 
 .navbar{
     height: 80px;
@@ -62,6 +65,68 @@ a{
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 20px;
+}
+
+/*CARDS*/
+
+.row-h{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.col-h {
+    flex-basis: calc(100% / 5);
+    background-color: #b5ddff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.col-h:first-child{
+    flex-basis: 40%;
+    flex-grow: 2;
+}
+  
+.card-h {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px}
+  
+.card-h-content h3 {
+    color: #0084fd;
+    padding: 10px 0;
+    flex-grow: 2;
+}
+  
+.card-h-content p {
+    padding: 20px 0;
+}
+  
+.card-h-content a {
+    background-color: #0084fd;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+  
+.card-h img {
+    width: 100%;
+    height: auto;
+}
+
+.card-h i, .card-h h3{
+    color: #0084fd;
+    padding: 20px 0;
+}
+
+.card-h i{
+    font-size: 40px;
+}
+
+.card-h p{
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 /*Responsive*/
