@@ -213,11 +213,12 @@ a{
     text-align: center;
 }
 
-.test-top h4, h2, p{
+.test-top h4, p{
     margin-bottom: 40px;
 }
 
 .test-top h2{
+    margin-bottom: 40px;
     font-size: 45px;
     color: #9792e4;
 }
@@ -292,6 +293,55 @@ a{
     font-size: 20px;
 }
 
+/*BENEFITS SECTION*/
+
+.benefits{
+    background-color: #9792e4;
+}
+
+/*BENEFITS TITLE*/
+
+.ben-top h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*BENEFITS CARDS*/
+
+.ben-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.col-ben{
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-ben{
+    padding: 20px;
+}
+
+.col-ben h2, h3{
+    color: #9792e4;
+    padding: 10px 0;
+}
+
+.col-ben h2{
+    font-size: 60px;
+}
+
+.col-ben a{
+    background-color: #9792e4;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
 
 /******************************
 RESPONSIVE
@@ -319,6 +369,12 @@ RESPONSIVE
     /*testimonials*/
 
     .card-test{
+        display: flex;
+        flex-direction: column;
+    }
+    /*benefits Card*/
+
+    .ben-row{
         display: flex;
         flex-direction: column;
     }
@@ -405,6 +461,17 @@ RESPONSIVE
         display: flex;
         flex-direction: row;
     }
+
+    /*benefits Card*/
+
+    .ben-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-ben{
+        flex-basis: calc(100% / 2 - 20px);
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -423,6 +490,12 @@ RESPONSIVE
     .row-j{
         display: flex;
         flex-direction: row;
+    }
+
+    /*benefits Card*/
+
+    .col-ben{
+        flex-basis: calc(100% / 3 - 20px);
     }
 }
 
@@ -444,6 +517,12 @@ RESPONSIVE
     .row-j{
         display: flex;
         flex-direction: row;
+    }
+
+    /*benefits Card*/
+
+    .col-ben{
+        flex-basis: calc(100% / 3 - 20px);
     }
 }
 
